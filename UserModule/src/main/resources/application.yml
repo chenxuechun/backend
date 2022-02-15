@@ -1,0 +1,20 @@
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/backend?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+  application:
+    name: user-service
+mybatis:
+  # 指定实体类包路径
+  typeAliasesPackage: com.cxc.po
+  # 指定xml文件扫描路径
+  mapper-locations: classpath*:mapper/*.xml
+server:
+  port: 10002
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:10000/eureka/

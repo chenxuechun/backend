@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="mybatis-generator" />
+        <module name="UserModule" />
+        <module name="backend" />
+        <module name="ShortMessage" />
+        <module name="eureka" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="backend" target="1.8" />
+      <module name="cloud" target="1.8" />
+      <module name="eureka" target="1.8" />
+      <module name="eureka-server" target="1.8" />
+      <module name="mybatis-generator" target="1.8" />
+      <module name="mybatis-generator-gui" target="1.8" />
+      <module name="ShortMessage" target="1.8" />
+      <module name="UserModule" target="1.8" />
+      <module name="Zuul" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ShortMessage" options="-parameters" />
+      <module name="UserModule" options="-parameters" />
+      <module name="Zuul" options="-parameters" />
+      <module name="backend" options="-parameters" />
+      <module name="cloud" options="-parameters" />
+      <module name="eureka" options="-parameters" />
+      <module name="eureka-server" options="-parameters" />
+      <module name="mybatis-generator" options="-parameters" />
+      <module name="mybatis-generator-gui" options="-parameters" />
+    </option>
+  </component>
+</project>
